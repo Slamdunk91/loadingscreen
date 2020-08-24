@@ -5,7 +5,6 @@ var sequences = {
   INIT_AFTER_MAP_LOADED: "INIT_AFTER_MAP_LOADED",
   INIT_SESSION: "INIT_SESSION"
 };
-var debug = false;
 
 $(document).ready(function () {
   var progress = $('#progress');
@@ -17,6 +16,7 @@ $(document).ready(function () {
 
   var video = $('video:first');
   var player = video.get(0);
+  var source = $('source:first', video).get(0);
   var control = {
     volumeToggle: $('#volume-toggle')
   };
@@ -32,8 +32,9 @@ $(document).ready(function () {
   });
 
   // Video player
-  player.volume = getConfig('videoVolume', 0.5);
-  player.muted = getConfig('videoMuted', false);
+  source.src = CONFIG.video;
+  player.volume = getConfig('videoVolume', CONFIG.defaults.volume);
+  player.muted = getConfig('videoMuted', CONFIG.defaults.muted);
   control.volumeToggle.toggleClass('mute', player.muted);
 
   // Controls
@@ -67,7 +68,7 @@ $(document).ready(function () {
   }
 
   // Debug mode
-  if (debug) {
+  if (CONFIG.debug) {
     var count = 0.0;
     var update = function () {
       count += 0.01;
