@@ -1,5 +1,5 @@
 -- Resource Metadata
-fx_version 'cerulean'
+fx_version 'adamant'
 games { 'gta5' }
 
 author 'Slamdunk & Bubu'
