@@ -34,4 +34,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-This code has been written by Bubu and Slamdunk.
+This code has been written by Grobux and Slamdunk.
