@@ -21,7 +21,7 @@ $(document).ready(function () {
     volumeToggle: $('#volume-toggle')
   };
 
-  // Server massages
+  // Server messages
   window.addEventListener('message', function (event) {
     if (event.data.eventName === 'loadProgress') {
       updateProgress(event.data.loadFraction);
@@ -35,20 +35,6 @@ $(document).ready(function () {
   player.volume = getConfig('videoVolume', 0.5);
   player.muted = getConfig('videoMuted', false);
   control.volumeToggle.toggleClass('mute', player.muted);
-
-  video.on('timeupdate', function () {
-    // Always hidden
-    /*if (parseInt(player.currentTime) >= 12) {
-      progress.fadeIn();
-    } else {
-      progress.hide();
-    }*/
-
-    if (parseInt(player.currentTime) === parseInt(player.duration)) {
-      player.currentTime = 24;
-      player.play();
-    }
-  });
 
   // Controls
   control.volumeToggle.on('click', function () {
@@ -67,7 +53,7 @@ $(document).ready(function () {
     });
   });
 
-  // Fonctions
+  // Functions
   function updateProgress(ratio) {
     var percent = parseInt(ratio * 100);
     output.value.html(percent);
