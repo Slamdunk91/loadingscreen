@@ -6,7 +6,7 @@ Loadingscreen is a script that will give you the possibility to load any video y
 
 To install this resource, simply download, drag & drop the folder "loadingscreen" to your resources on your FiveM server/FTP.
 
-Make sure to add : ensure loadingscreen in your server.cfg
+Make sure to add : "ensure loadingscreen" in your server.cfg to start the resource.
 
 ## Usage
 
