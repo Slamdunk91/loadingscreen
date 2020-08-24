@@ -29,7 +29,7 @@ In style.css go to lines 100 & 101 and choose the pixels size you want.
 
 - Modify default volume :
 
-In file scipt.js go to line 35 and choose the player volume you want by changing ‘videoVolume’ value from 0.0 to 1.0
+In file script.js go to line 35 and choose the player volume you want by changing ‘videoVolume’ value from 0.0 to 1.0
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
