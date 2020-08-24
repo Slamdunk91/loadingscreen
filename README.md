@@ -2,6 +2,8 @@
 
 Loadingscreen is a script that will give you the possibility to load any video you want as a loading screen for your FiveM Server.
 
+*Please note that this script is not working with YouTube links.*
+
 ## Installation
 
 To install this resource, simply download, drag & drop the folder "loadingscreen" to your resources on your FiveM server/FTP.
