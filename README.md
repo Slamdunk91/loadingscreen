@@ -8,11 +8,17 @@ To install this resource, simply download, drag & drop the folder "loadingscreen
 
 Make sure to add : "ensure loadingscreen" in your server.cfg to start the resource.
 
-## Usage
+## Config
 
-- Choose the video you want to display :
+You can access the config.js for the following modifications :
 
-In Index.html line 22 --> put the source of your video (I greatly advise you to choose mp4 format as it is lighter in terms of file weight).
+- Change the video URL
+
+- Change if you want the volume muted or not
+
+- Modify default video volume
+
+## Alternate config
 
 - Modify cursor & buttons :
 
@@ -21,10 +27,6 @@ Access folder "img", from here you can modify the cursor, volume buttons, that w
 - Modify cursor size :
 
 In style.css go to lines 100 & 101 and choose the pixels size you want.
-
-- Modify default volume :
-
-In file script.js go to line 35 and choose the player volume you want by changing ‘videoVolume’ value from 0.0 to 1.0
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
