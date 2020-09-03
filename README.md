@@ -4,6 +4,10 @@ Loadingscreen is a script that will give you the possibility to load any video y
 
 *Please note that this script is not working with YouTube links.*
 
+## Screen loading preview
+
+https://cdn.lagoon-island.fr/loadingscreen/ui/
+
 ## Installation
 
 To install this resource, simply download, drag & drop the folder "loadingscreen" to your resources on your FiveM server/FTP.
